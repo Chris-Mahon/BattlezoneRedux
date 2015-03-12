@@ -8,7 +8,7 @@ import System.IO;
 import Vectrosity;
 
 class LineMaker extends ScriptableWizard {
-	var useCsharp = false;
+	var useCsharp = true;
 	var objectTransform : Transform;
 	var pointObjects : Transform[];
 	var lines : List.<GameObject>;
