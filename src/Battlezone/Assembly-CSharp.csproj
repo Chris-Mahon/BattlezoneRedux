@@ -78,8 +78,12 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Vectrosity">
- <HintPath>D:/Projects/BattlezoneRedux/src/Battlezone/Assets/Plugins/Vectrosity.dll</HintPath>
+ <HintPath>C:/Users/Chris/Desktop/BattlezoneRedux/src/Battlezone/Assets/Plugins/Vectrosity.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{B988350D-D015-6DA6-F19B-08C49775DCAF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

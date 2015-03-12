@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{CDD1CC08-5025-AED8-2288-84A628957DB6}</ProjectGuid>
+	<ProjectGuid>{7261FC78-7374-E10F-E27A-6D64AC33C6BE}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,34 +46,24 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\DepthColliderDemo\Scripts\DepthImageViewer.cs" />
-     <Compile Include="Assets\DepthColliderDemo\Scripts\EggMover.cs" />
-     <Compile Include="Assets\DepthColliderDemo\Scripts\EggSpawner.cs" />
-     <Compile Include="Assets\GesturesDemo\Scripts\GestureListener.cs" />
-     <Compile Include="Assets\GesturesDemo\Scripts\PresentationScript.cs" />
-     <Compile Include="Assets\KinectScripts\AvatarController.cs" />
-     <Compile Include="Assets\KinectScripts\AvatarControllerClassic.cs" />
-     <Compile Include="Assets\KinectScripts\Cubeman\CubemanController.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsConstraint.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\BoneOrientationsFilter.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\ClippedLegsFilter.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\JointPositionsFilter.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\KinectHelper.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\SelfIntersectionConstraint.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\TimedLerp.cs" />
-     <Compile Include="Assets\KinectScripts\Filters\TrackingStateFilter.cs" />
-     <Compile Include="Assets\KinectScripts\KinectGestures.cs" />
-     <Compile Include="Assets\KinectScripts\KinectManager.cs" />
-     <Compile Include="Assets\KinectScripts\KinectWrapper.cs" />
-     <Compile Include="Assets\KinectScripts\Samples\FollowUserRotation.cs" />
-     <Compile Include="Assets\KinectScripts\Samples\GetJointPositionDemo.cs" />
-     <Compile Include="Assets\KinectScripts\Samples\LoadMainLevel.cs" />
-     <Compile Include="Assets\KinectScripts\Samples\MouseControl.cs" />
-     <Compile Include="Assets\KinectScripts\Samples\SetSceneAvatars.cs" />
-     <Compile Include="Assets\KinectScripts\Samples\SimpleGestureListener.cs" />
-     <Compile Include="Assets\OverlayDemo\Scripts\KinectOverlayer.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\Render.cs" />
+     <Compile Include="Assets\_TankZone\Scripts\AvoidObstacle.js" />
+     <Compile Include="Assets\_TankZone\Scripts\EnemyTankControl.js" />
+     <Compile Include="Assets\_TankZone\Scripts\LineData.js" />
+     <Compile Include="Assets\_TankZone\Scripts\Manager.js" />
+     <Compile Include="Assets\_TankZone\Scripts\MoveObject.js" />
+     <Compile Include="Assets\_TankZone\Scripts\ObjectRotate.js" />
+     <Compile Include="Assets\_TankZone\Scripts\ObstacleControl.js" />
+     <Compile Include="Assets\_TankZone\Scripts\PlayerMove.js" />
+     <Compile Include="Assets\_TankZone\Scripts\PlayerRadar.js" />
+     <Compile Include="Assets\_TankZone\Scripts\SaucerControl.js" />
+     <Compile Include="Assets\_TankZone\Scripts\ShellControl.js" />
+     <Compile Include="Assets\_TankZone\Scripts\TankPart.js" />
+     <Compile Include="Assets\_TankZone\Scripts\TankZoneUI.js" />
+     <Compile Include="Assets\_TankZone\Scripts\TitleObject.js" />
+     <None Include="Assets\_TankZone\Shaders\Unlit .shader" />
+     <None Include="Assets\_TankZone\Shaders\UnlitAlpha.shader" />
+     <None Include="Assets\_TankZone\Shaders\ParticleAdditiveSoftZ.shader" />
+     <None Include="Assets\_TankZone\Shaders\SolidColor.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -82,8 +72,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{B988350D-D015-6DA6-F19B-08C49775DCAF}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{B988350D-D015-6DA6-F19B-08C49775DCAF}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
