@@ -11,13 +11,14 @@ public class CameraController : MonoBehaviour
 
 	private float RotSpeed;//Speed of rotation
 	private float Speed; //Speed that the tank will move
-
+	Vector3 spawnSpot = new Vector3(0f,0.5f,0f);
 
 	// Use this for initialization
 	void Start () 
 	{//Initialising variables
 		RotSpeed = 2;
 		Speed = 0;
+
 	}//End of Start
 	
 	// Update is called once per frame
@@ -25,7 +26,10 @@ public class CameraController : MonoBehaviour
 	{//Game Loop
 		float Move = Input.GetAxis ("Vertical"); //Gets input on the Vertical Axis (Up and down arrow)
 		float Rotation = Input.GetAxis("Horizontal"); //Gets input on the Horizontal axis (left and right arrow)
-
+		if (Input.GetKeyDown ("space")) 
+		{
+			GameObject cubeSpawn = (GameObject)Instantiate(Resources.Load("Spike"), spawnSpot, transform.rotation);
+		}
 		transform.Rotate(0, Rotation*RotSpeed, 0); //Rotates the camera left or right depending on input
 		Speed = (float)(Move*1.5); //Sets the movement speed
 		Vector3 Direction = Movement(Speed); //Sets Velocity
