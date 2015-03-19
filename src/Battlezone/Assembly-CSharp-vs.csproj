@@ -49,6 +49,9 @@
      <Compile Include="Assets\DepthColliderDemo\Scripts\DepthImageViewer.cs" />
      <Compile Include="Assets\DepthColliderDemo\Scripts\EggMover.cs" />
      <Compile Include="Assets\DepthColliderDemo\Scripts\EggSpawner.cs" />
+     <Compile Include="Assets\DestroyEnemy.cs" />
+     <Compile Include="Assets\DestroyShell.cs" />
+     <Compile Include="Assets\EnemySpawn.cs" />
      <Compile Include="Assets\GesturesDemo\Scripts\GestureListener.cs" />
      <Compile Include="Assets\GesturesDemo\Scripts\PresentationScript.cs" />
      <Compile Include="Assets\KinectScripts\AvatarController.cs" />
@@ -75,7 +78,6 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Render.cs" />
      <Compile Include="Assets\Scripts\ShootProjectile.cs" />
-     <Compile Include="Assets\Scripts\SpawnManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
