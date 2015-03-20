@@ -52,7 +52,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Vectrosity">
- <HintPath>C:/Users/Jake/Documents/GitHub/BattlezoneRedux/src/Battlezone/Assets/Plugins/Vectrosity.dll</HintPath>
+ <HintPath>C:/Users/fifty_000/Downloads/tp/Team Project/BattlezoneRedux/src/Battlezone/Assets/Plugins/Vectrosity.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

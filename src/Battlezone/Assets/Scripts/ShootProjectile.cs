@@ -12,11 +12,15 @@ public class ShootProjectile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetKeyDown("space")) {
 			GameObject TankShell = Instantiate (prefab) as GameObject;
 			TankShell.transform.position = transform.position+Camera.main.transform.forward;
 			Rigidbody rb = TankShell.GetComponent<Rigidbody>();
 			rb.velocity = Camera.main.transform.forward * 40;
 		}
 	}
+	
+	
+		
+
 }
