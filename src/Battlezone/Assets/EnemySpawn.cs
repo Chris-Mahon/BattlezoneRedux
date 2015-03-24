@@ -8,6 +8,7 @@ public class EnemySpawn : MonoBehaviour
 	public float minTime = 5.0f;
 	public float maxTime = 15.0f;
 	public GameObject Enemy;  // The enemy prefab
+	public int amount = 0;
 	
 	IEnumerator SpawnObject(float seconds)
 	{
@@ -26,6 +27,12 @@ public class EnemySpawn : MonoBehaviour
 		{
 			isSpawning = true; //Yep, we're going to spawn
 			StartCoroutine(SpawnObject(Random.Range(minTime, maxTime)));
+			amount++;
 		}
+	}
+
+	void OnGUI()
+	{
+		GUI.Box (new Rect(Screen.width/2 - 220, Screen.width/2 - 240, 50, 25), amount.ToString());
 	}
 }

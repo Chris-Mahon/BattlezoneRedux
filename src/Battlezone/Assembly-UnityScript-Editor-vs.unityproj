@@ -54,7 +54,7 @@
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/Editor/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Vectrosity">
- <HintPath>C:/Users/fifty_000/Downloads/tp/Team Project/BattlezoneRedux/src/Battlezone/Assets/Plugins/Vectrosity.dll</HintPath>
+ <HintPath>C:/Users/Dragonfly/Documents/GitHub/BattlezoneRedux/src/Battlezone/Assets/Plugins/Vectrosity.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
