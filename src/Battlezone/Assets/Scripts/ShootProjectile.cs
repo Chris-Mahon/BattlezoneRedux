@@ -20,7 +20,9 @@ public class ShootProjectile : MonoBehaviour {
 			TankShell.transform.position = transform.position+Camera.main.transform.forward;
 			Rigidbody rb = TankShell.GetComponent<Rigidbody>();
 			rb.velocity = Camera.main.transform.forward * 40;
+			Destroy (TankShell, 5.0f);
 		}
+
 	}
 	
 	
