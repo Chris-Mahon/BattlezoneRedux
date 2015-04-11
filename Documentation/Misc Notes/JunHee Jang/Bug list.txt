@@ -1,0 +1,21 @@
+1. Thank shell(missile) do not despawn(disappear) ( they dont go away )
+
+2. When I close to green box and trun to right or left, there appears graphical error from green box. Greeen line appears in front of user.
+
+3. Pressing space bar was mapped to sponing vectrocity cubes as well as shooting
+
+
+
+----
+
+2015-03-22
+
+4. When player goes so far from center of map, player is droped
+
+5. When you enter space bar, then there appear green box on the center again and again.
+
+6. When player on the green box (I think player can't on the green box) , enemies appear upper virtual line
+
+7. missile is not diappear, it floating in the sky 
+
+8. player can see the green box behind enemy.
