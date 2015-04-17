@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -78,11 +78,12 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Render.cs" />
      <Compile Include="Assets\Scripts\ShootProjectile.cs" />
+     <Compile Include="Assets\Scripts\TankRender.cs" />
  <Reference Include="UnityEngine.UI">
- <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Vectrosity">
- <HintPath>C:/Users/Toast3y/Documents/GitHub/BattlezoneRedux/src/Battlezone/Assets/Plugins/Vectrosity.dll</HintPath>
+ <HintPath>C:/Users/Chris/Desktop/BattlezoneRedux/src/Battlezone/Assets/Plugins/Vectrosity.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
