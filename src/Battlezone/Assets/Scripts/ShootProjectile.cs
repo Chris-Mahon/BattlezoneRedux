@@ -8,7 +8,8 @@ public class ShootProjectile : MonoBehaviour {
 	GameObject prefab;
 	
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		prefab = Resources.Load ("TankShell") as GameObject;
 	}
 	
