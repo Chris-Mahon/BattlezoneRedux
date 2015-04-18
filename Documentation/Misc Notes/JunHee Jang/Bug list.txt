@@ -19,3 +19,13 @@
 7. missile is not diappear, it floating in the sky 
 
 8. player can see the green box behind enemy.
+
+
+2015-04-17
+
+9. added bullet and thank blender image. but when user shoot, bullet direction is not proper. It should be shooted front side
+
+10. When enemy tank blender image is added, tank and enemy do not dspawn. 
+
+11. some bullet is not disappear and floating on the map
+
