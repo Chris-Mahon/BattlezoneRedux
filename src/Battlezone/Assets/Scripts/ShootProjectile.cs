@@ -6,6 +6,8 @@ public class ShootProjectile : MonoBehaviour {
 	public AudioClip shot;
 	
 	GameObject prefab;
+	public float fireRate;
+	private float nextFire = 0.0F;
 	
 	// Use this for initialization
 	void Start () 
@@ -15,7 +17,8 @@ public class ShootProjectile : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown("space")) {
+		if (Input.GetKeyDown("space") && Time.time > nextFire) {
+			nextFire = Time.time + fireRate;
 			audio.PlayOneShot(shot, 0.7F);
 			GameObject TankShell = Instantiate (prefab) as GameObject;
 			TankShell.transform.position = transform.position+Camera.main.transform.forward;
