@@ -31,8 +31,8 @@ public class EnemySpawn : MonoBehaviour
 		}
 	}
 
-	void OnGUI()
-	{
-		GUI.Box (new Rect(Screen.width/2 - 220, Screen.width/2 - 240, 50, 25), amount.ToString());
-	}
+	//void OnGUI()
+	//{
+		//GUI.Box (new Rect(Screen.width/2 - 220, Screen.width/2 - 240, 50, 25), amount.ToString());
+	//}
 }
