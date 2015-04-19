@@ -2,6 +2,11 @@
 using System.Collections;
 
 public class EnemyAI : MonoBehaviour {
+	float speed;
+
+	GameObject prefab;
+
+	bool waiting;
 
 	// Use this for initialization
 	void Start () 
@@ -9,27 +14,43 @@ public class EnemyAI : MonoBehaviour {
 		Vector3 PlayerLocale = GameObject.Find("Player").transform.position;
 		print (PlayerLocale.x);
 		transform.LookAt(PlayerLocale);
-		float speed = 0.0f;
+		speed = 0.5f;
+		prefab = Resources.Load ("TankShell") as GameObject;
+		waiting = false;
+
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		if (!waiting) 
+		{
+			StartCoroutine(MoveOrFire());
+		}
+	}
+
+	IEnumerator MoveOrFire()
+	{
 		Vector3 PlayerLocale = GameObject.Find("Player").transform.position;
 		transform.LookAt(PlayerLocale);
 		float distance = Vector3.Distance (GameObject.Find("Player").transform.position, gameObject.transform.position);
-		print ("Distance is", distance);
-
-		if (distance > 10) 
+		
+		if (distance > 20) 
 		{
-			speed = 0.0f;
+			speed = 0.5f;
 			transform.position = Vector3.MoveTowards(transform.position, PlayerLocale, speed * Time.deltaTime);
 		}
 		else 
 		{
-			WaitForSeconds(5);
-			print("Hi");
-			speed = 0.5f;
+			waiting = true;
+			GameObject TankShell = Instantiate (prefab) as GameObject;
+			TankShell.transform.position = transform.position + gameObject.transform.forward;
+			Rigidbody rb = TankShell.GetComponent<Rigidbody>();
+			rb.velocity = gameObject.transform.forward * 40;
+			Destroy (TankShell, 5.0f);
+			yield return new WaitForSeconds(5);
+			waiting = false;
 		}
+
 	}
 }

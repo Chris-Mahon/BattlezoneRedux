@@ -15,7 +15,7 @@ public class EnemySpawn : MonoBehaviour
 		Debug.Log ("Waiting for " + seconds + " seconds");
 		
 		yield return new WaitForSeconds(seconds);
-		Instantiate(Enemy, transform.position+Camera.main.transform.forward*10, transform.rotation);
+		Instantiate(Enemy, transform.position+Camera.main.transform.forward*30, transform.rotation);
 		//We've spawned, so now we could start another spawn     
 		isSpawning = false;
 	}
