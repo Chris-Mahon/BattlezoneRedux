@@ -78,6 +78,7 @@
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\EnemySpawn.cs" />
      <Compile Include="Assets\Scripts\Render.cs" />
+     <Compile Include="Assets\Scripts\ShellRenderer.cs" />
      <Compile Include="Assets\Scripts\ShootProjectile.cs" />
      <Compile Include="Assets\Scripts\Stage.cs" />
      <Compile Include="Assets\Scripts\TankRender.cs" />

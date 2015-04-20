@@ -5,7 +5,11 @@ public class DestroyEnemy : MonoBehaviour
 {
 	void OnCollisionEnter (Collision col)
 	{
-		if(col.gameObject.name == "Obstacle")
+		if (col.gameObject.name == "Obstacle") 
+		{
+			Destroy (gameObject);
+		} 
+		else if (col.gameObject.name.Contains ("Border")) 
 		{
 			Destroy(gameObject);
 		}
