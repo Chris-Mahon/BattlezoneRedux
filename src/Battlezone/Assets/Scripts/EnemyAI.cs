@@ -45,9 +45,11 @@ public class EnemyAI : MonoBehaviour {
 			waiting = true;
 			GameObject TankShell = Instantiate (prefab) as GameObject;
 			TankShell.transform.position = transform.position + gameObject.transform.forward;
+			TankShell.name = "Enemy" + TankShell.name;
 			Rigidbody rb = TankShell.GetComponent<Rigidbody>();
 			rb.velocity = gameObject.transform.forward * 40;
 			Destroy (TankShell, 5.0f);
+
 			yield return new WaitForSeconds(5);
 			waiting = false;
 		}
