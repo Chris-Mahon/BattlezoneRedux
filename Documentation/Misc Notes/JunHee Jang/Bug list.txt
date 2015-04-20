@@ -27,5 +27,21 @@
 
 10. When enemy tank blender image is added, tank and enemy do not dspawn. 
 
-11. some bullet is not disappear and floating on the map
+10. some bullet is not disappear and floating on the map
 
+2015-04-18
+11. crosshair1 and 2 are appear same time.
+
+12. when enemy approach to player it just palced in same sopt as player. it should be attack player
+
+13. When enemy appear in front of green triangle, play can see green obstacle through the emenyeplayer can not see throgh enemy
+
+14. When player approach to osbtacle, it should be blocked from it. but now there appear green error line on the screen
+
+2015-04-20
+
+15. Enemy attacks player but there is no engery hurt yet
+
+16. Bullet fly through the obstacle. it shouldn't do that
+
+17. when bullets from me and from enemy crashed, bullet go over the air like scorrer ball
