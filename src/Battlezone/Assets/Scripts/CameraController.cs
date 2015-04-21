@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour
 	private float RotSpeed;//Speed of rotation
 	private float Speed; //Speed that the tank will move
 	Vector3 spawnSpot = new Vector3(0f,0.5f,0f);
-
+	public static int score = 0;
 	// Use this for initialization
 	void Start () 
 	{//Initialising variables
@@ -49,4 +49,5 @@ public class CameraController : MonoBehaviour
 	{
 		return(new Vector3 (0, 0, Number));
 	}
+
 }

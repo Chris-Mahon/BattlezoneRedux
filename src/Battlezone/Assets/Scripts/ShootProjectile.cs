@@ -4,7 +4,7 @@ using System.Collections;
 public class ShootProjectile : MonoBehaviour {
 
 	public AudioClip shot;
-	
+
 	GameObject prefab;
 	public float fireRate;
 	private float nextFire = 0.0F;

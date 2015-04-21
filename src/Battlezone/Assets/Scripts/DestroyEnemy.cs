@@ -1,8 +1,18 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+
 
 public class DestroyEnemy : MonoBehaviour
 {
+	Text score = null;
+	int currscore;
+	void Start ()
+	{
+		score = GameObject.Find ("GUItext").GetComponent<Text>();
+
+	}
+
 	void OnCollisionEnter (Collision col)
 	{
 		if (col.gameObject.name == "Obstacle") 
@@ -33,7 +43,11 @@ public class DestroyEnemy : MonoBehaviour
 			if (col.gameObject.name == "Enemy(Clone)") 
 			{
 				Destroy(col.gameObject);
+				int.TryParse(score.text, out currscore);
+				currscore+=100;
+				score.text=currscore.ToString();	
 				Destroy(gameObject);
+
 			}
 			if (col.gameObject.name == "TankShell(Clone)")
 			{
