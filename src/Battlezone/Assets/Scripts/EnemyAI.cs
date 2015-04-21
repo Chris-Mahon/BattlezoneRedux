@@ -35,7 +35,7 @@ public class EnemyAI : MonoBehaviour {
 		transform.LookAt(PlayerLocale);
 		float distance = Vector3.Distance (GameObject.Find("Player").transform.position, gameObject.transform.position);
 		
-		if (distance > 20) 
+		if (distance > 15) 
 		{
 			speed = 0.5f;
 			transform.position = Vector3.MoveTowards(transform.position, PlayerLocale, speed * Time.deltaTime);
@@ -43,6 +43,8 @@ public class EnemyAI : MonoBehaviour {
 		else 
 		{
 			waiting = true;
+			yield return new WaitForSeconds(5);
+
 			GameObject TankShell = Instantiate (prefab) as GameObject;
 			TankShell.transform.position = transform.position + gameObject.transform.forward;
 			TankShell.name = "Enemy" + TankShell.name;
@@ -50,7 +52,6 @@ public class EnemyAI : MonoBehaviour {
 			rb.velocity = gameObject.transform.forward * 40;
 			Destroy (TankShell, 5.0f);
 
-			yield return new WaitForSeconds(5);
 			waiting = false;
 		}
 
