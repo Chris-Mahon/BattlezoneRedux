@@ -1,0 +1,36 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6810)
+    Vendor:   ATI
+    VRAM:     2027 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\Vectrosity.dll (this message is harmless)
+Loading D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\Vectrosity.dll into Unity Child Domain
+- Completed reload, in  0.135 seconds
+desktop: 1920x1200 60Hz; virtual: 1920x1200 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Projects\BattlezoneRedux\bin\BZRedux_Data\Managed\System.dll (this message is harmless)
+Waiting for 6.492918 seconds
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+-2.72
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
+Waiting for 6.829011 seconds
+ 
+(Filename: C:/buildslave/unity/build/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 56)
+
